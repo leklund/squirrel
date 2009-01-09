@@ -451,6 +451,12 @@ module Squirrel
         @operand = val
         self
       end
+      
+      def contains_i? val #:nodoc:
+        @operator = :contains_i
+        @operand = val
+        self
+      end
 
       def nil? #:nodoc:
         @operator = :==
